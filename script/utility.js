@@ -11,7 +11,13 @@ function showElementById(elementId){
 function setBackgroundColorById(elementId){
     const  element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
-    console.log(elementId);
+    // console.log(elementId);
+}
+
+function removeBackgroundColorById(elementId){
+    const  element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+    // console.log(elementId);
 }
 
 function getARandomAlphabet(){
@@ -24,3 +30,8 @@ function getARandomAlphabet(){
     const index = Math.round(randomNumber);
     return  alphabetString[index];
 }
+function key(keyName){
+    return keyName;
+}
+let score = 0;
+
