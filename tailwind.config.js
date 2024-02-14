@@ -3,7 +3,11 @@ module.exports = {
   content: ['**/*.html'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero': "url('/images/background.png')",
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
