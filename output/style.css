@@ -1140,10 +1140,6 @@ html {
   min-height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -1221,6 +1217,10 @@ html {
   background-color: rgb(47 41 65 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFFFFF33\] {
+  background-color: #FFFFFF33;
+}
+
 .bg-\[\#FFFFFFB3\] {
   background-color: #FFFFFFB3;
 }
@@ -1228,15 +1228,6 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFFFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFFFF33\] {
-  background-color: #FFFFFF33;
 }
 
 .bg-hero {
