@@ -1,26 +1,29 @@
-function handleKeyboardKeyUpEvent(event){
+function handleKeyboardKeyUpEvent(event) {
     const playerPressed = event.key;
 
     // console.log(event.key);
     const currentAlphabetElement = document.getElementById('currentAlphabet');
     const currentAlphabet = currentAlphabetElement.innerText;
-    const expectedAlphabet = currentAlphabet.toLowerCase(currentAlphabet);
+    const expectedAlphabet = currentAlphabet.toLowerCase();
     console.log(playerPressed, expectedAlphabet)
-    if(playerPressed == expectedAlphabet){
+    if (playerPressed == expectedAlphabet) {
         console.log("Right");
-    }else{
+        removeBackgroundColorById(expectedAlphabet)
+        continueGame();
+
+    } else {
         console.log("wrong")
     }
 }
-document.addEventListener('keyup',handleKeyboardKeyUpEvent);
+document.addEventListener('keyup', handleKeyboardKeyUpEvent);
 
 
 
 
-function continueGame(){
+function continueGame() {
     // step -1: generate a random alphabet
     //  let alphabet = String.fromCharCode(Math.floor((Math.random() * 26) + 97));
-    
+
     //step-2 : hide the start screen and show the game screen
     const alphabet = getARandomAlphabet();
     document.getElementById('currentAlphabet').innerText = alphabet;
@@ -32,7 +35,7 @@ function continueGame(){
 
 
 
-function playNow(){
+function playNow() {
     hideElementById('home');
     showElementById('playground')
     continueGame();
